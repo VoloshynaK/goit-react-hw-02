@@ -1,0 +1,49 @@
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  padding: 6px 10px;
+  margin-right: 8px;
+  border-radius: 10px;
+}
+.btn-label {
+  margin-right: 8px;
+}
+.icon {
+  font-size: 20px;
+}
+.btn:last-of-type {
+  margin-right: 0;
+}
+.good {
+  background-color: rgb(154, 232, 193);
+}
+.good:hover {
+  background-color: rgb(109, 232, 170);
+}
+.neutral {
+  background-color: rgb(233, 229, 132);
+}
+.neutral:hover {
+  background-color: rgb(235, 233, 84);
+}
+.bad {
+  background-color: rgb(248, 154, 154);
+}
+.bad:hover {
+  background-color: rgb(246, 98, 98);
+}
+.reset {
+  background-color: rgb(223, 222, 222);
+}
+.reset:hover {
+  background-color: rgb(178, 177, 177);
+}
