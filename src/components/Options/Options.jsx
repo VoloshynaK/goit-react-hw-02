@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import css from './Options.module.css'
 import { PiArrowClockwiseLight, PiSmileyLight, PiSmileyMehLight, PiSmileySadLight } from "react-icons/pi";
 

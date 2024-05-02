@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 // import css from './Feedback.module.css'
 
 export default function Feedback ({good, neutral, bad, total, stat}) {
