@@ -14,9 +14,7 @@ export default function App() {
     }
     return {good: 0,
       neutral: 0,
-      bad: 0,
-      total: 0,
-      stat: 0};
+      bad: 0};
   });
 
   const updateFeedback = feedbackType => {
@@ -43,9 +41,7 @@ export default function App() {
         setOptions({
           good: 0,
           neutral: 0,
-          bad: 0,
-          total: 0,
-          stat: 0
+          bad: 0
         })
     }
   }
@@ -54,8 +50,8 @@ export default function App() {
   const stat = Math.round((options.good / totalFeedback) * 100);
 
   useEffect(() => {
-    window.localStorage.setItem("saved-feedback", JSON.stringify({ good: options.good, neutral: options.neutral, bad: options.bad, total: totalFeedback, stat: stat }))
-  }, [options, totalFeedback, stat]);
+    window.localStorage.setItem("saved-feedback", JSON.stringify(options))
+  }, [options]);
 
   return (
     <>
